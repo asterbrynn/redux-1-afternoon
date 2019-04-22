@@ -6,7 +6,7 @@ import './Author.css';
 class Author extends Component {
   constructor(props) {
     super(props);
-    const reduxState = store.getState();
+    let reduxState = store.getState();
     this.state = {
       authorFirst: reduxState.firstName,
       authorLast: reduxState.lastName

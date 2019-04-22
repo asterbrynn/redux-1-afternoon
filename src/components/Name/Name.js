@@ -6,7 +6,7 @@ import "./Name.css";
 class Name extends Component {
   constructor(props) {
     super(props);
-    const reduxState = store.getState();
+    let reduxState = store.getState();
     this.state = {
       name: reduxState.recipeName,
       category: reduxState.recipeCategory
